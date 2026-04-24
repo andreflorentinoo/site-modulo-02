@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando fontes externas baixadas</title>
+    <style>
+        @font-face {
+            font-family: 'Drop Shade';
+            src: url(fontes/DropShade-Shadow.ttf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+         /* 
+    Tipos de format()
+    - opentype(otf)
+    - truetype(ttf)
+    - embedded-opentype(eot)
+    - truetype-aat (Apple Advanced Typography)
+    - svg(svg)
+
+    */
+        body {
+            font-family: Drop Shade, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: Drop Shade, Helvetica, sans-serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes externas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugiat blanditiis excepturi eligendi dolorem, laborum ab reprehenderit culpa officiis expedita voluptas. Mollitia adipisci facilis dolorem exercitationem quasi voluptates veniam culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam accusamus nemo eius, exercitationem adipisci modi dolore reprehenderit eveniet quae laborum autem libero quo saepe voluptates fugiat cum ipsum, tenetur maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora et veniam laborum enim vero. Quaerat veritatis vel quisquam quam inventore nobis fugiat voluptates ipsa totam reprehenderit molestiae laborum, dolorum est.</p>
+</body>
+</html>

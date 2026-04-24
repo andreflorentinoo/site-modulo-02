@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos em CSS</title>
+    <style>
+
+        
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none; /*para tirar o sublinhado*/
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline; /*quando passar o mouse em cima, o texto vai ficar sublinhado */
+        }
+        a:active {
+            color: yellow; /*quando clicar, vai ficar amarelo */
+        }
+        a::before {
+            content: '-> ';
+            
+        }
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>
+            <a href="index.html" target="_blank">página principal</a>
+        </li>
+        <li>
+            <a href="ex08Aula03 cap15.html" target="_blank">primeiro exercico da ultima aula</a>
+        </li>
+        <li>
+            <a href="ex08.2Aula03 cap15.html" target="_blank"> segundo exercicio da ultima aula</a>
+        </li>
+    </ul>
+</body>
+</html>
